@@ -1,0 +1,139 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin: 5%;
+  color: #FEF2BF;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+  
+}
+
+.btn {
+  margin: 25px;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.butt button {
+  background-color: #4CAF50; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 15px 32px; /* Some padding */
+  text-align: center; /* Centered text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make the container inline-block */
+  font-size: 50px; /* Increase font size */
+  margin: 20px 2px; /* Add some margin */
+  cursor: pointer; /* Add a pointer on hover */
+  border-radius: 12px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Add a hover effect for the button */
+.butt button:hover {
+  background-color: #0ee5e9;
+  color: black; /* Darker green */
+}
+
+/* Add an active effect for the button */
+.butt button:active {
+  background-color: #3e8e41; /* Even darker green */
+  box-shadow: 0 5px #666; /* Add a shadow */
+  transform: translateY(4px); /* Slightly move the button down */
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  position: relative;
+  bottom: 0;
+  max-width:  100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#user{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: aliceblue;
+  font-size: 2rem;
+}
+
+@media (max-width: 990px) {
+  .container {
+    width: 100%;
+    margin-top: 20%;
+    
+  }
+
+  #level-title{
+    font-size: 3rem;
+    margin-top: 200px;
+  }
+  .btn {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .butt button{
+    font-size: 5rem;
+    border-radius: 20px;
+    margin-top: 10%;
+  }
+
+  #user{
+    margin-top: 10%;
+    font-size: 5rem;
+  }
+  footer {
+    position: relative;
+    bottom: 0;
+    margin-top: 70px; /* Adjust margin-top as needed */
+  }
+  
+}
